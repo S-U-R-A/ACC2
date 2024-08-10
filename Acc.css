@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('relaxing-lion-galaxy-neon-art-u1itk8rzl4rz8hg0.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px; /* Space between the image and the buttons */
+}
+
+.header-text {
+  font-size: 36px; /* Larger font size for desktop */
+  font-weight: bold;
+  color: #ff4982;
+  margin-bottom: 10px;
+}
+
+.top-image {
+  width: 120px; /* Default size */
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #ff4982;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  width: 70px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav li {
+  height: 60px;
+  width: 70px;
+  margin: 8px 0;
+}
+
+nav li a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+nav li a i {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+  font-size: 27px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+ul li a span {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  z-index: 1;
+  width: 300px; /* Larger width for desktop */
+  margin-left: -115px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+ul li:hover a span {
+  display: block;
+}
+
+/* Media Query for Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+  .header-text {
+    font-size: 28px; /* Smaller font size for tablets */
+  }
+
+  .top-image {
+    width: 100px; /* Adjust size for tablets */
+    height: 100px;
+  }
+
+  nav {
+    width: 60px;
+  }
+
+  nav li {
+    height: 55px;
+    width: 60px;
+  }
+
+  nav li a {
+    line-height: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  nav li a i {
+    font-size: 24px;
+    left: 11px;
+  }
+
+  a:hover {
+    width: 250px;
+    margin-left: -95px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .header-text {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .top-image {
+    width: 80px; /* Adjust size for mobile */
+    height: 80px;
+  }
+
+  nav {
+    width: 50px;
+  }
+
+  nav li {
+    height: 45px;
+    width: 50px;
+  }
+
+  nav li a {
+    line-height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  nav li a i {
+    font-size: 20px;
+    left: 8px;
+  }
+
+  a:hover {
+    width: 200px;
+    margin-left: -75px;
+  }
+}
